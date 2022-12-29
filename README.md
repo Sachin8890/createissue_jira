@@ -3,7 +3,7 @@
 The gem is help to upload the excel file test cases to Jira under specific epic
 Example: 
 
-**1. Excel file attached** 
+**1. A sample excel file attached** 
 
 **2. Example:** 
 ```
@@ -22,7 +22,7 @@ require_relative './api'
 @datafile.create_api('#{project_key}','#{epic_key}','#{assignee_id}','#{label}')
 ```
 
-**3. Jira Credenatianl details:** 
+**3. Jira Credentianl details:** 
 ```
 jiraApiToken
 assignee_id
@@ -32,7 +32,7 @@ epic_key
 label
 ```
 
-All above fields details can be found using below documantation: https://developer.atlassian.com/server/jira/platform/rest-apis/
+The Jira Credentianl fields ids and token details can be found using below documantation: https://developer.atlassian.com/server/jira/platform/rest-apis/
 
 **4. File:**
 [sample.xlsx](https://github.com/Sachin8890/createissue_jira/files/10320730/sample.xlsx)
