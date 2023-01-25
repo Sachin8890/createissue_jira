@@ -14,7 +14,8 @@ require 'roo'
 require_relative './api'
 
 @datafile = Datafile.new
-@datafile.jira_api_credentials("https://#{baseUrl}atlassian.net/","#{jiraApiToken}","#{assignee_id}","#{acceptance_criteria_id}")
+@datafile.jira_api_credentials(email: "abc@xyz.com, jira_api_token: "#{jiraApiToken}", base_url: "https://#{baseUrl}atlassian.net/",assignee_id: "#{assignee_id}",acceptance_criteria_id: "#{acceptance_criteria_id}")
+
 @datafile.load_file('./sample.xlsx',0,'ID')
 @datafile.summary(1,2,2)
 @datafile.description(2,3,'Business Acceptance')
